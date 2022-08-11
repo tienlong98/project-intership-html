@@ -10,7 +10,7 @@ img {
      object-position: center;
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-box-sizing: 2px 2px 4px;
           box-sizing: 2px 2px 4px;
 }
@@ -121,12 +121,135 @@ header .header-content .title p {
 .item-bt {
   color: white;
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .item-bt .item-content-tour {
   width: 100%;
   position: absolute;
   bottom: 0;
-  left: 20px;
+  left: 0;
+  -webkit-transition: height 0.8s ease;
+  transition: height 0.8s ease;
+  background: rgba(0, 0, 0, 0.5);
+  height: 0;
+}
+
+.item-bt .item-content-tour p {
+  display: none;
+}
+
+.item-bt img {
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+.item-bt:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.item-bt:hover .item-content-tour {
+  height: 20%;
+}
+
+.item-bt:hover .item-content-tour p {
+  display: block;
+}
+
+.item-tips {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.ks .item-hotels {
+  cursor: pointer;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.ks .item-hotels .item-content-ks {
+  background: rgba(0, 0, 0, 0.5);
+  height: 0;
+  -webkit-transition: height 0.8s ease;
+  transition: height 0.8s ease;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ks .item-hotels .item-content-ks p {
+  display: none;
+}
+
+.ks .item-hotels img {
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+.ks .item-hotels:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.ks .item-hotels:hover .item-content-ks {
+  height: 20%;
+}
+
+.ks .item-hotels:hover .item-content-ks p {
+  display: block;
+}
+
+.sokaibasho .sokai-content {
+  position: relative;
+  -webkit-column-count: 4;
+          column-count: 4;
+  padding: 20px;
+}
+
+.sokaibasho .sokai-content .image {
+  display: inline-block;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.sokaibasho .sokai-content .image img {
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+.sokaibasho .sokai-content .image:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+@media screen and (max-width: 992px) {
+  .sokai-content {
+    -webkit-column-count: 3 !important;
+            column-count: 3 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sokai-content {
+    -webkit-column-count: 2 !important;
+            column-count: 2 !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sokai-content {
+    -webkit-column-count: 1 !important;
+            column-count: 1 !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

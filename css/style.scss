@@ -9,7 +9,7 @@ img {
     object-position: center;
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
     box-sizing: 2px 2px 4px;
 }
 
@@ -115,10 +115,127 @@ header {
 .item-bt {
     color: white;
     position: relative;
-    .item-content-tour{
+    overflow: hidden;
+    cursor: pointer;
+
+    .item-content-tour {
         width: 100%;
         position: absolute;
         bottom: 0;
-        left: 20px;
+        left: 0;
+        transition: height 0.8s ease;
+        background: rgba(0, 0, 0, 0.5);
+        height: 0;
+
+        p {
+            display: none;
+        }
+    }
+
+    img {
+        transition: transform 0.8s ease;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.3);
+        }
+
+        .item-content-tour {
+            height: 20%;
+
+            p {
+                display: block;
+            }
+        }
+
+    }
+}
+
+.item-tips {
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.ks {
+    .item-hotels {
+        cursor: pointer;
+        color: white;
+        position: relative;
+        overflow: hidden;
+
+        .item-content-ks {
+            background: rgba(0, 0, 0, 0.5);
+            height: 0;
+            transition: height 0.8s ease;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            p {
+                display: none;
+            }
+        }
+
+        img {
+            transition: transform 0.8s ease;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.3);
+            }
+
+            .item-content-ks {
+                height: 20%;
+
+                p {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.sokaibasho {
+    .sokai-content {
+        position: relative;
+        column-count: 4;
+        padding: 20px;
+
+        .image {
+            display: inline-block;
+            margin-bottom: 10px;
+            overflow: hidden;
+
+            img {
+                transition: transform 0.8s ease;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .sokai-content {
+        column-count: 3 !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .sokai-content {
+        column-count: 2 !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .sokai-content {
+        column-count: 1 !important;
     }
 }
