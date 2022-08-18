@@ -1,0 +1,74 @@
+@import url("./fonts.css");
+body {
+  font-family: "Huifont";
+}
+
+header {
+  color: white;
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(230, 92, 6);
+}
+
+header .menu {
+  margin-left: 25px;
+}
+
+header .menu .text-logo {
+  font-family: "LifeLogo";
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  position: relative;
+}
+
+header .menu ion-icon {
+  font-size: 20px;
+  color: white;
+}
+
+header .menu .icon-1 {
+  position: absolute;
+  left: -5px;
+  top: 5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+header .menu .icon-2 {
+  position: absolute;
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .menu .nav-item {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0px 15px 0px 15px;
+}
+
+header .menu .nav-item .nav-link {
+  color: white;
+}
+
+.mem-img{
+    width: 100%;
+    height: min-content;
+    margin:2%;
+    padding:5%;
+    border-radius:5%;
+    border:5px solid rgb(255, 149, 2);
+}
+
+h1{
+    text-align:center;
+}
+
+p{
+    text-align: center;
+}
+.title{
+    background-color:orange;
+    border-radius: 5%;
+}

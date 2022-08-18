@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/safety.css" />
-  <link rel="icon" href="images/icon.ico">
-  <title>VIET NAM</title>
+    <link rel="stylesheet" href="./css/contact.css" />
+    <title>Contact</title>
 </head>
-
 <body>
-  <style>
-    #safety{
-      background-color: yellow;
-      border-radius: 5px;
-    }
-  </style>
   <header>
     <div class="menu">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -47,7 +39,7 @@
                 <a class="nav-link" href="./about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -66,58 +58,44 @@
         </div>
       </nav>
     </div>
-    <div class="sns">
-      <!-- <div class="line"></div> -->
-      <div class="mxh">
-     <ion-icon name="logo-facebook"></ion-icon><br />
-        <ion-icon name="logo-twitter"></ion-icon><br />
-        <ion-icon name="logo-instagram"></ion-icon>
-      </div>
-      <!-- <div class="line"></div> -->
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center mt-5 mb-5">
-          <h1>SAFETY TIPS</h1>
-          <p>Prepare for your trip with these practical articles</p>
-        </div>
-  
-        <div id="transport" class="col-lg-4 col-md-4 pb-5 pt-3">
-          <a href="./transport.html">
-            <div class="item-tips fs-1 text-center pt-3">
-              <ion-icon name="car-sport-outline"></ion-icon>
-              <p class="fs-4">TRANSPORT</p>
-            </div>
-          </a>
-        </div>
-        <div id="weather" class="col-lg-4 col-md-4 pb-5 pt-3">
-          <a href="./weather.html">
-            <div class="item-tips fs-1 text-center pt-3">
-              <ion-icon name="thunderstorm-outline"></ion-icon>
-              <p class="fs-4">WEATHER</p>
-            </div>
-          </a>
-        </div>
-        <div id="safety" class="col-lg-4 col-md-4 pb-5 pt-3">
-          <a href="./safety.html">
-            <div class="item-tips fs-1 text-center pt-3">
-              <ion-icon name="shield-outline"></ion-icon>
-              <p class="fs-4">SAFETY</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
   </header>
-  <footer class="text-center">
-    <h1 class="mt-5 mb-5 pt-5 pb-5">Footer Dang Nghi</h1>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h1>OUR ADDRESS</h1>
+                <P>In Tokyo:</P>
+                Tokyo Chyuo-ku XXX XChome X-X
+                <p>In Saitama</p>
+                Saitama Saitama XXX XChome X-X
+                <img src="./images/jpmap2.png" alt="bản đồ" width="100%">
+              </div>  
+            <div class="col-md-7">
+                <h1>Contact</h1>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
 
+</body>
 </html>
+<!-- Path: contact.html -->
