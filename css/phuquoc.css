@@ -136,11 +136,11 @@ img {
 }
 
 footer {
-  background: url(../images/bgdulich2.jpg) no-repeat;
-  background-size: cover;
-  background-position: 47.6% 100%;
-  width: 100%;
-  height: 100%;
+  background: #dfdde2;
+}
+
+footer ion-icon {
+  font-size: 25px;
 }
 
 @media screen and (max-width: 992px) {

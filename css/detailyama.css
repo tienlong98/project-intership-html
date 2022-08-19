@@ -29,4 +29,8 @@ header .title h1 {
   padding: 50px 100px;
   font-size: 3rem;
 }
+
+footer ion-icon {
+  font-size: 25px;
+}
 /*# sourceMappingURL=detailyama.css.map */
