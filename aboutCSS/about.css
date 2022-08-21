@@ -80,45 +80,31 @@ label{
 
 /* team-member */
 
-.team-member image{
-    position: relative;
-}
 
-.team-member img{
+.container img{
     border: 5px solid rgb(255, 255, 255);
-    overflow: hidden;
-    height: 225px;
-    width: 224px;
+    height: 190px;
+    width: 203px;
 
 }
 
 .team-member figcaption{
-    
-    position: absolute;
-    padding: 150px 0;
-    text-align: center;
-    z-index: 3;
-    transform: translateY(7px);
-    opacity: 0;
-    transition: 0.3s;
+    padding-top: 22px;
 
-}
+} 
 
 .team-member figcaption h6{
     font-size: 14px;
 }
 
-.container .image:hover{
+.container .image img:hover{
     cursor: pointer;
     transform: scale(1.2);
     z-index: 3;
 
 }
 
-.container .image:hover figcaption{
-    transform: translateY(0);
-    opacity: 1;
-}
+
 
 
 /* footer */
