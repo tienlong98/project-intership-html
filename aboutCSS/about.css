@@ -87,6 +87,8 @@ label{
 .team-member img{
     border: 5px solid rgb(255, 255, 255);
     overflow: hidden;
+    height: 225px;
+    width: 224px;
 
 }
 
