@@ -1,0 +1,117 @@
+@import url("./fonts.css");
+body {
+  font-family: "Huifont";
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.banner {
+  width: 100%;
+  height: 80vh;
+}
+
+h3,
+h4 {
+  border-left: 5px solid yellowgreen;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.input-group-append {
+  cursor: pointer;
+}
+
+.detail-content p {
+  text-align: left;
+}
+
+.dattour .sln .pt {
+  margin-top: 10px;
+}
+
+.dattour .sln .pt ion-icon {
+  padding-left: 15px;
+}
+
+.dattour .nut .frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.dattour .nut .custom-btn {
+  width: 130px;
+  height: 40px;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.dattour .nut .btn-5 {
+  width: 130px;
+  height: 40px;
+  padding: 0;
+  border: 2px solid black;
+}
+
+.dattour .nut .btn-5:hover {
+  color: black;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.dattour .nut .btn-5:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: black;
+  -webkit-box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+          box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+}
+
+.dattour .nut .btn-5:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: black;
+  -webkit-box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+          box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.dattour .nut .btn-5:hover:before, .dattour .nut .btn-5:hover:after {
+  width: 100%;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+}
+/*# sourceMappingURL=detailtour.css.map */
