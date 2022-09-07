@@ -402,12 +402,14 @@ footer .text-footer-center .ion-ft {
     padding: 2vw;
   }
   .mini-menu{
+    display: flex;
     position: fixed ;
-    top: 10vh;
-    left: 40vw;
+    top: 90vh;
+    left: 27vw;
     font-size: 35px;
     margin: 0;
     padding: 0;
+    z-index: 1;
   } 
   .mini-menu p{
     text-align: center;
@@ -425,6 +427,10 @@ footer .text-footer-center .ion-ft {
   }
   .mini-menu p:hover{
     background-color:lightyellow;
+    border-radius: 5px;
+  }
+  #weather{
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
   }
 }
