@@ -5,10 +5,20 @@
 @import url("./fonts.css");
 body {
   font-family: "Huifont";
-  background-image: url("../images/background-safety.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0 15vw;
+  padding: 0 12vh;
+}
+body::after{
+  content: "";
+  background-image: url("../images/background-transport.jpg");
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -1000px;
+  z-index: -1;   
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
 header {
@@ -24,25 +34,25 @@ header {
 .navbar{
   margin: 0;
   background-color: white;
+  padding:5px;
 }
 
 header .menu .text-logo {
   font-family: "LifeLogo";
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   color: black;
   position: relative;
 }
 
 header .menu ion-icon {
-  font-size: 20px;
+  font-size: 30px;
   color: black;
 }
 
 header .menu .icon-1 {
   position: absolute;
-  left: -5px;
-  top: 5px;
+  left:-30px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -166,10 +176,7 @@ header .header-content .title p {
 }
 
 /* transport */
-#transport{
-  
-}
-#transport a{
+/* #transport a{
   text-decoration: none;
 }
 #transport a:visited{
@@ -186,7 +193,7 @@ header .header-content .title p {
 }
 #weather a:visited{
   color:black;
-}
+} */
 
 /* mini menu */
 
@@ -206,13 +213,13 @@ header .header-content .title p {
   padding-top: 15px;
 }
 .fa-sharp{
-  color: azure;
+  color: rgb(246, 148, 19);
 }
 .travel-icon{
-  color: azure;
+  color: rgb(246, 148, 19);
 }
 .mini-menu p:hover{
-  background-color:lightyellow;
+  background-color:rgb(245, 245, 35);
   border-radius: 5px;
 }
 
@@ -220,9 +227,9 @@ header .header-content .title p {
 .wrap{
   position:relative;
   top:100px;
-  padding: 15vh 0;
+  padding: 5vh 0 5vh 5vw;
   margin-bottom: 15vh;
-  background-color:rgba(226, 175, 57, 0.84);
+background-color:rgba(226, 175, 57, 0.84);
 }
 #wrap{
   display: block;
@@ -230,9 +237,15 @@ header .header-content .title p {
 /* banner */
 #banner{
   border-radius: 5px; 
-  border: solid sandybrown;
+  border: solid rgb(142, 68, 3);
   box-shadow: 15px 15px 15px  rgba(0, 0, 0, 0.5);
 }
+
+/* tips */
+#tips{
+  margin: 5%;
+}
+
 /* footer */
 
 footer{
@@ -348,10 +361,10 @@ footer .text-footer-center .ion-ft {
   font-size: 25px;
 }
 .f1{
-  color: white;
+  color: black;
 }
 .f2{
-  color: white;
+  color: black;
 }
 .f1 .logo-footer{
   margin: 100px;
@@ -381,5 +394,42 @@ footer .text-footer-center .ion-ft {
     -webkit-column-count: 1 !important;
             column-count: 1 !important;
   }
+  body{
+    margin: 0;
+    padding: 2vw;
+  }
+  .mini-menu{
+    display: flex;
+    position: fixed ;
+    top: 90vh;
+    left: 27vw;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  } 
+  .mini-menu p{
+    text-align: center;
+    margin: 0;
+    padding: 0 5px;
+    padding-top: 15px;
+    color: rgb(246, 148, 19);
+
+  }
+  .fa-sharp{
+    color: rgb(246, 148, 19);
+  }
+  .travel-icon{
+    color: rgb(246, 148, 19);
+  }
+  .mini-menu p:hover{
+    background-color:lightyellow;
+    border-radius: 5px;
+  }
+  #transport{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
+

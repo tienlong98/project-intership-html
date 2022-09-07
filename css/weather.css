@@ -9,8 +9,8 @@ body {
 }
 body::after{
   content: "";
-  background-image: url("../images/background-safety.jpg");
-  opacity: 0.5;
+  background-image: url("../images/background-weather.jpg");
+  opacity: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -175,29 +175,6 @@ header .header-content .title p {
   color:black;
 }
 
-/* transport */
-#transport{
-  
-}
-#transport a{
-  text-decoration: none;
-}
-#transport a:visited{
-  color:black;
-}
-#safety a{
-  text-decoration: none;
-}
-#safety a:visited{
-  color:black;
-}
-#weather a{
-  text-decoration: none;
-}
-#weather a:visited{
-  color:black;
-}
-
 /* mini menu */
 
 .mini-menu{
@@ -216,10 +193,10 @@ header .header-content .title p {
   padding-top: 15px;
 }
 .fa-sharp{
-  color: azure;
+  color: rgb(1, 125, 250);
 }
 .travel-icon{
-  color: azure;
+  color: rgb(1, 125, 250);
 }
 .mini-menu p:hover{
   background-color:lightyellow;
@@ -364,10 +341,10 @@ footer .text-footer-center .ion-ft {
   font-size: 25px;
 }
 .f1{
-  color: white;
+  color: black;
 }
 .f2{
-  color: white;
+  color: black;
 }
 .f1 .logo-footer{
   margin: 100px;
@@ -426,11 +403,11 @@ footer .text-footer-center .ion-ft {
     color: rgb(6, 22, 114);
   }
   .mini-menu p:hover{
-    background-color:lightyellow;
+    background-color:rgb(149, 253, 163);
     border-radius: 5px;
   }
   #weather{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color:rgba(170, 249, 182, 0.843);
     border-radius: 5px;
   }
 }
