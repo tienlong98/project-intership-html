@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./coupon.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Coupon</title>
+</head>
+<body>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6" id="image">
+                <img src="https://www.freepnglogos.com/uploads/plane-png/png-jet-plane-transparent-jet-plane-images-pluspng-34.png" alt="" id="plane">                
+            </div>
+            <div class="col-md-6">
+                <div id="info"class="pt-md-4">
+                    <div id="mobile-plane">
+                        <img src="https://www.freepnglogos.com/uploads/plane-png/png-jet-plane-transparent-jet-plane-images-pluspng-34.png" alt="" id="plane">                
+                    </div>
+                    <div class="h4">Get</div>
+                    <div class="offer font-weight-bold"><i>20% OFF</i></div>
+                    <div class="h4">on</div>
+                    <div class="h4">Your Next Flight with us</div>
+                    <div class="coupon">
+                        <i>coupon valid for One Month</i>
+                    </div>
+                    <div class=" copy-and-past border-bottom d-flex justify-content-center">the code</div>
+                    <!-- <div class="d-flex justify-content-center text-uppercase" id="code">alliswell</div> -->
+                    <!-- <button onclick="myFunction()" class=" btn justify-content-center" id="mycode"><i>alliswell</i></button> -->
+
+                    <div class="check-code-bar justify-content-center">
+                        <p id="code-copy">xxxlll</p>
+                        <button id="btn" class="btn btn-outline-primary btn-sm">Copy code</button>
+                    </div>
+
+            
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const $ = document.querySelector.bind(document);
+        const contentCopyElm = $("#code-copy"),
+        buttonCopyElm = $("#btn");
+
+        const isSupported = (cmd) => {
+            return document.queryCommandSupported(cmd);
+        };
+
+        buttonCopyElm.addEventListener("click", () => {
+        const range = document.createRange(),
+        selection = window.getSelection();
+
+        selection.removeAllRanges();
+
+        range.selectNodeContents(contentCopyElm);
+
+        selection.addRange(range);
+
+        try {
+        if (isSupported("copy")) document.execCommand("copy");
+        else alert(`execCommand("copy") is not supported in your browser.`);
+        } catch (e) {
+        console.log(e);
+        }
+
+        selection.removeAllRanges();
+});
+    </script>
+</body>
+</html>
