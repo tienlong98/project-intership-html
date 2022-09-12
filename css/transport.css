@@ -175,26 +175,6 @@ header .header-content .title p {
   color:black;
 }
 
-/* transport */
-/* #transport a{
-  text-decoration: none;
-}
-#transport a:visited{
-  color:black;
-}
-#safety a{
-  text-decoration: none;
-}
-#safety a:visited{
-  color:black;
-}
-#weather a{
-  text-decoration: none;
-}
-#weather a:visited{
-  color:black;
-} */
-
 /* mini menu */
 
 .mini-menu{
@@ -342,7 +322,7 @@ footer .text-footer-center .sns-footer ion-icon {
 footer .text-footer-center .line {
   width: 2px;
   height: 10vh;
-  background-color: black;
+  background-color: white;
 }
 
 footer .text-footer-center table {
@@ -350,7 +330,7 @@ footer .text-footer-center table {
 }
 
 footer .text-footer-center table tr {
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 footer .text-footer-center table tr td {
@@ -361,10 +341,10 @@ footer .text-footer-center .ion-ft {
   font-size: 25px;
 }
 .f1{
-  color: black;
+  color: white;
 }
 .f2{
-  color: black;
+  color: white;
 }
 .f1 .logo-footer{
   margin: 100px;
