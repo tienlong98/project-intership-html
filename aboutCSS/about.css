@@ -1,38 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: url(../images/bgdulich1.jpg) no-repeat;
+    background-color: black;
+    /* background: url(../images/bgdulich1.jpg) no-repeat; */
+    background-color: #131f33;
     background-size: cover;
     background-position: center;
 }
 
-header{
+header {
     position: relative;
-    background: #fff;
+    color: #fff;
     top: 0;
     width: 100%;
     padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
-header .logo{
+header .logo {
     position: relative;
-    color: #000;
+    color: #fff;
     font-size: 30px;
     text-decoration: none;
     text-transform: uppercase;
@@ -40,8 +41,8 @@ header .logo{
     letter-spacing: 1px;
 }
 
-header .menu-bar a{
-    color: #000;
+header .menu-bar a {
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
@@ -51,178 +52,204 @@ header .menu-bar a{
     transition-property: background;
 }
 
-header .menu-bar a:not(:last-child){
+header .menu-bar a:not(:last-child) {
     margin-right: 30px;
 }
 
-header .menu-bar a:hover{
+header .menu-bar a:hover {
     background: #fff;
 }
 
-label{
+label {
     display: none;
 }
 
-#check{
+#check {
     z-index: 3;
     display: none;
 }
 
+
 /* silder */
 
-.back-ground img{
+.back-ground img {
     position: relative;
     width: 100%;
     height: 100%;
-
 }
 
 
 /* team-member */
 
-
-.container img{
-    border: 5px solid rgb(255, 255, 255);
-    height: 190px;
-    width: 203px;
-
+hr {
+    margin: 20px 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
 }
 
-.team-member figcaption{
-    padding-top: 22px;
-
-} 
-
-.team-member figcaption h6{
-    font-size: 14px;
+.about-us {
+    text-align: center;
 }
 
-.container .image img:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-    z-index: 3;
+.about-img {
+    position: relative;
+}
 
+.about-us .profile {
+    text-align: center;
 }
 
 
+/* .about-img::before{
+    position: absolute;
+    content: '';
+    right: -30px;
+    top: 30px;
+    border: 10px solid rgba(255,255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+} */
+
+.about-img img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text {
+    /* padding-top: 5%; */
+    border-radius: 5px;
+    align-items: center;
+}
+
+.about-text h2 {
+    color: #fff;
+    font-family: lobster;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.about-text h4 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.about-text {
+    font-size: 18px;
+    color: #fff;
+}
 
 
 /* footer */
-.about-1{
+
+.about-1 {
     margin: 30px;
     padding: 5px;
-} 
+}
 
-.about-1 h1{
+.about-1 h1 {
     text-align: center;
-    color: black;
+    color: #fff;
     font-weight: bold;
 }
 
-.about-1 p{
+.about-1 p {
     text-align: center;
     padding: 3px;
-    color: rgb(17, 15, 15);
-
+    color: #fff;
 }
 
-.about-item{
+.about-item {
     margin-bottom: 20px;
     margin-top: 20px;
     background-color: white;
-    padding: 80px,30px;
+    padding: 80px, 30px;
     box-shadow: 0 0 9px rgba(0, 0, 0 .6);
+    border-radius: 5px;
+    width: auto;
+    height: 300px;
 }
 
-
-
-.about-item i{
+.about-item i {
     font-size: 43px;
     margin: 20px;
-
-
 }
 
-.about-item h3{
+.about-item h3 {
     font-size: 25px;
     margin-bottom: 10px;
 }
 
-.about-item hr{
+.about-item hr {
     width: 46px;
     height: 3px;
     background-color: #5fbff9;
     margin: 0 auto;
-    border:nome;
+    border: nome;
 }
 
-.about-item p{
+.about-item p {
     padding: 10px 10px;
-    
 }
 
-.about-item:hover{
-    background: url(../images/bgdulich3.jpg);
+.about-item:hover {
+    background: #131f33;
 }
 
 .about-item:hover i,
 .about-item:hover h3,
-.about-item:hover p{
+.about-item:hover p {
     color: #fff;
 }
 
-.about-item:hover hr{
+.about-item:hover hr {
     background-color: #fff;
 }
 
-.about-item:hover i{
+.about-item:hover i {
     transform: translateY(-10px);
 }
 
 .about-item:hover i,
 .about-item:hover h3,
-.about-item:hover hr{
+.about-item:hover hr {
     transition: all 400ms ease-in-out;
 }
 
-
-footer{
+footer {
     padding: 20px;
-
 }
 
-footer p{
-    color: black;
+footer p {
+    color: #fff;
 }
 
 
 /* Responsive */
 
-@media(max-width: 960px){
-    header .menu-bar{
+@media(max-width: 960px) {
+    header .menu-bar {
         display: none;
     }
-    label{
+    label {
         display: block;
         font-size: 25px;
         cursor: pointer;
         transition: 0.3s;
         transition-property: color;
-        
     }
-
-    label:hover{
+    label:hover {
         color: #fff;
     }
-
-    label .close-btn{
+    label .close-btn {
         display: none;
     }
-
-    #check:checked ~ header .menu-bar{
+    #check:checked~header .menu-bar {
         z-index: 2;
         position: fixed;
-        background:url(../images/bgdulich3.jpg);
+        background: url(../images/bgdulich3.jpg);
         top: 0;
         bottom: 0;
         left: 0;
@@ -231,33 +258,37 @@ footer p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
-
-    #check:checked ~ header .menu-bar a{
+    #check:checked~header .menu-bar a {
         font-weight: 700;
         margin-right: 0;
         margin-top: 50px;
         letter-spacing: 2px;
     }
-    
-    #check:checked ~ header label .menu-btn{
+    #check:checked~header label .menu-btn {
         display: none;
     }
-
-    #check:checked ~ header label .close-btn{
+    #check:checked~header label .close-btn {
         z-index: 2;
         display: block;
         position: fixed;
     }
-
-    label .menu-btn{
+    label .menu-btn {
         position: absolute;
     }
-
-    header .logo{
+    header .logo {
         position: absolute;
         bottom: 6px;
     }
-
+    .about-text h2 {
+        color: #fff;
+        font-family: lobster;
+        font-size: 30px;
+        font-family: cursive;
+        padding-top: 5px;
+    }
+    .about-text h4 {
+        color: #fff;
+        font-size: 20px;
+    }
 }
